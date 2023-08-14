@@ -8,7 +8,6 @@ namespace HydrometeorologicalStation
 {
     internal struct Temperature
     {
-        public readonly bool isEmpty=true;
         public readonly DateTime dateTime;
         double celsius;
         double fahrenheit;
@@ -16,7 +15,6 @@ namespace HydrometeorologicalStation
 
         public Temperature(DateTime dateTime, double celsius)
         {
-            isEmpty = false;
             this.dateTime = dateTime;
             this.celsius = celsius;
             fahrenheit = celsius * (9 / 5) + 32;
